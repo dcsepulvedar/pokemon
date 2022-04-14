@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <!--Bibliotecas importadas: AR.js para la geolocalización y donmccurdy para manejar la animación de modelos 3D  -->
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -14,11 +15,14 @@
 
 <script src="./script.js"></script>
 <body style='margin: 0; overflow: hidden;'>
+    <!--Container de la aplicación-->
     <a-scene
        vr-mode-ui="enabled: false"
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        <!--Elemento que calcula la rotación, posición del usuario y la distacia entre el usuario y los lugares-->
         <a-camera gps-camera rotation-reader>
 		</a-camera>
 	</a-scene>
+
 </body>
