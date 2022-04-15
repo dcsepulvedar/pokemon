@@ -2,11 +2,11 @@ window.onload = () => {
     let places = staticLoadPlaces();
     renderPlaces(places);
 };
-//Función que contiene una matriz con las coordenadas en donde estarán los pokemon
+//Función que contiene una matriz con las coordenadas en donde estará el pokemon
 function staticLoadPlaces() {
    return [
        {
-           name: 'Articuno',
+           name: 'Magnemite',
            location: {
                lat: 4.753636,
                lng: -74.096541,
@@ -22,10 +22,10 @@ function renderPlaces(places) {
        let latitude = place.location.lat;
        let longitude = place.location.lng;
 
-       //Modelo 3D - Magnemite
+       //Definición de atributos del modelo 3D - Magnemite
        let model = document.createElement('a-entity');
        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-       model.setAttribute('gltf-model', './assets/articuno/scene.gltf');
+       model.setAttribute('gltf-model', './assets/magnemite/scene.gltf');
        model.setAttribute('rotation', '0 180 0');
        model.setAttribute('animation-mixer', '');
        model.setAttribute('scale', '0.5 0.5 0.5');
