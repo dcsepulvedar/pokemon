@@ -8,22 +8,22 @@ function staticLoadPlaces() {
        {
            name: 'Magnemite',
            locationA: {
-               lat: 4.753820,
-               lng: -74.097179,
+               lat: 4.753612,
+               lng: -74.096495,
            }
        },
        {
             name: 'Dragonite',
             locationB: {
-                lat: 4.7509285,
-                lng: -74.0960931,
+                lat: 4.753595,
+                lng: -74.096704,
             }
     },
     {
             name: 'Articuno',
             locationC: {
-                lat: 4.754002,
-                lng: -74.097151,
+                lat: 4.753629,
+                lng: -74.096263,
             }
     },
    ];
